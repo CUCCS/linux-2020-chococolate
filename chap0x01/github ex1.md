@@ -1,6 +1,7 @@
 #### Ubuntu无人值守镜像安装制作
 
 
+
 ###### step 1.
 将虚拟机设置为双网卡（NAT+hostonly）
 ###### step 2.
