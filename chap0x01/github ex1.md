@@ -1,6 +1,8 @@
 #### Ubuntu无人值守镜像安装制作
 
 
+[视频连接点开不亏]（http://m.youku.com/v_show/id_XNDU5OTQwOTM0NA==.html?pgcpgcid=UNjIyOTA5ODY3Mg%3D%3D&sharekey=82a2ae6456bb3e6ef7bf72670f7ca9d15）
+
 
 ###### step 1.
 将虚拟机设置为双网卡（NAT+hostonly）
