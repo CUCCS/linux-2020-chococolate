@@ -64,6 +64,8 @@
 
     * 给定URL（/whats-new.html）输出TOP 100访问来源主机结果[link](https://github.com/chococolate/shells/blob/master/try5.txt)
 
+4.[travis](https://github.com/chococolate/shells/blob/master/.travis.yml)(试着写了写= =)
+
 #### 实验总结
   * 所有bash代码都是自己敲的，在敲的过程中进一步加深了对语法的了解（发现了参考哥姐代码的小错误哈哈哈）
   
