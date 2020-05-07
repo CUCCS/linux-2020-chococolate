@@ -46,12 +46,11 @@
 1. [try1.sh](https://github.com/chococolate/shells/blob/master/try2.sh)
 
 
-    图片结果展示
-    ![]([../images/1.jp](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x04/images/1.jpg)g)
+    结果见图[link]([../images/1.jp](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x04/images/1.jpg)g)
 2. [try2.sh](https://github.com/chococolate/shells/blob/master/try2.sh)
 
 
-   图中展示为try2.sh执行结果（有图为鉴，真的手动敲了并执行成功了哦）[link]([../images/2.png](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x04/images/2.png))
+   图中展示为try2.sh执行结果（有图为鉴，真的手动敲了并执行成功了哦）[link](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x04/images/2.png)
 3. [try3.sh](https://github.com/chococolate/shells/blob/master/try2.sh)
 
 
@@ -61,8 +60,7 @@
 
     * 最频繁被访问的URL TOP 100结果[link](https://github.com/chococolate/shells/blob/master/try3.txt)
 
-    * "不同响应状态码的出现次数和对应百分比结果”与“不同4XX状态码对应的TOP 10 URL和对应出现的总次数结果”（~~比较短，懒得传文件了~~）![](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x04/images/3.1.png)
-   ![](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x04/images/3.1.png)
+    * "不同响应状态码的出现次数和对应百分比结果”与“不同4XX状态码对应的TOP 10 URL和对应出现的总次数结果”（~~比较短，懒得传文件了~~）[link1](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x04/images/3.1.png) [link2](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x04/images/3.1.png)
 
     * 给定URL（/whats-new.html）输出TOP 100访问来源主机结果[link](https://github.com/chococolate/shells/blob/master/try5.txt)
 
