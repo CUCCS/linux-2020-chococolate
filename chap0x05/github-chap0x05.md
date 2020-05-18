@@ -50,10 +50,10 @@
   
 * `sudo vim /etc/nginx/sites-enabled/default`
    
-    location ~ \.php$ {
+    `location ~ \.php$ {
          include snippets/fastcgi-php.conf;
           fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
-     }
+     }`
 修改nginx配置PHP-FPM进程的反向代理配置在nginx服务器上 保存退出
 
 * `sudo systemctl restart nginx1`重新启动nginx使配置生效
