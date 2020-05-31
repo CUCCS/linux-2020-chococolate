@@ -63,7 +63,7 @@
 
 * **FTP**
   * 服务器选择：vsftpd
-  * 脚本文件：[vsftpd.sh](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.sh/dhcp.sh))
+  * 脚本文件：[vsftpd.sh](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.sh/dhcp.sh)
   * 配置文件：[/etc/vsftpd.conf](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.conf/vsftp.conf)
   * 通过工作主机运行脚本在目标主机安装vsftpd并完成相关配置
 
@@ -100,8 +100,8 @@
     * [nfs_s.sh]([scripts/nfs_srv.sh](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.sh/nfs_s.sh))
     * [nfs_c.sh](s[cripts/nfs_clt.sh](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.sh/nfs_c.sh))
   * 配置文件
-    * [exports.conf](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.conf/exports.conf)
-  * 将nfs_s.sh拷贝到目标主机，工作主机运行nfs_srv.sh脚本
+    * [exports.conf](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.conf/exports)
+  * 将nfs_s.sh拷贝到目标主机，工作主机运行nfs_s.sh脚本
    `scp -i ~/.ssh/id_rsa -r /home/wmy/nfs_s.sh u2@192.168.56.102:workspace/nfs_s.sh`、
    `ssh -i ~/.ssh/id_rsa -r u2@192.168.56.102 'bash workspace/nfs_s.sh'`
 
@@ -199,9 +199,9 @@
 
   * **在windows 10客户端上连接Linux上的Samba服务器**
     * 脚本文件 [smbd.sh](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.sh/smbd.sh)
-    * 配置文件 [/etc/samba/smb.conf](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.conf/smb.conf)
+    * 配置文件 [smb.conf](https://github.com/CUCCS/linux-2020-chococolate/blob/chap0x06/.conf/smb.conf)
 
-    * 执行脚本smb_srv.sh
+    * 执行脚本smbd.sh
     > 配置文件目录：`/etc/samba/smb.conf`
     > 服务启动\停止\重启等命令：`/etc/init.d/smbd {start|stop|reload|restart|force-reload|status}`
     * 打开资源管理器，右键“此电脑”，选择“添加一个网络位置”
@@ -224,5 +224,12 @@
   `vim dhcp.sh` 
   `:set fileformat=unix`
   `:wq`
+
 * 2.在具体实验中，使用FTP连接方式时增删目录时，发现只能删除原有文件，对于新建文件可以重命名，但不能进行删除操作（不太懂这个逻辑==）
-* 3.参考哥姐脚本代码samba.sh硬是跑不通，报的错为：`unable to locate package samba`,运行了`apt-get update`不解决问题，一顿搜索后发现可能是主机欸之问题（加了中科大的源还是不行，劝退了555）
+  
+* 3.参考脚本代码samba.sh硬是跑不通，报的错为：`unable to locate package samba`,运行了`apt-get update`不解决问题，一顿搜索后发现可能是主机配置问题（加了中科大镜像源还是不行，晕，劝退了555）
+
+* 4.发现自己对文件夹和文件的相关命令及权限问题不太清楚，还有就是对这几种服务器的配置原理还有不理解的地方，课下努力跟进~
+## 参考资料
+* https://github.com/CUCCS/linux-2019-luyj/blob/Linux_exp0x06/Linux_exp0x06/Linux_exp0x06.md
+* https://github.com/CUCCS/2015-linux-public-JuliBeacon/blob/exp6/%E5%AE%9E%E9%AA%8C%206/%E5%AE%9E%E9%AA%8C6.md
